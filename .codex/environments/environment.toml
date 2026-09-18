@@ -3,5 +3,5 @@ name = "text-stats-go"
 
 [setup]
 script = '''
-GOTOOLCHAIN=go1.26.8 go test ./...
+GOPROXY=off GOTOOLCHAIN=go1.26.8 go test ./...
 '''
