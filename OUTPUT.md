@@ -5,7 +5,7 @@ It specifies report formatting, not findings to look for. Do not read the
 learner's human-first notes before completing the independent review.
 
 On an explicit final-export request, read the supplied observations and write
-root `RESULT.json`. Read-only commands may inspect this instruction, repository,
+root `report.json`. Read-only commands may inspect this instruction, repository,
 and Git state. Do not modify the candidate, install/resolve modules, run the
 experimental renderer, create probe files, commit, push, approve, or merge.
 Request missing observations. Do not invent model findings, external checks,
@@ -54,7 +54,7 @@ duplicate keys, or placeholders. Use the actual data, not the empty example:
 ## Learner handoff
 
 Ask the learner to compare the report with the actual review and command output,
-then commit only RESULT.json on their submission branch. The checker verifies
+then commit only report.json on their submission branch. The checker verifies
 scope, structured observations, citation locations, and intact files; it cannot
 authenticate external actions or fully judge the prose. No code changes are
 part of this exercise's solution.
