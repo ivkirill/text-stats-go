@@ -4,7 +4,7 @@ Use this file only at the final export, after the bounded read-only lookup and
 the learner's source check, or after recording why that task was unavailable.
 It is a format instruction, not an answer to the Git question.
 
-Write root `RESULT.json` when explicitly asked. Read-only commands to read this
+Write root `report.json` when explicitly asked. Read-only commands to read this
 instruction and inspect local Git state are permitted during export. Do not
 execute the Git examples, run the application, repeat the external lookup,
 add MCP configuration, modify application files, commit, or push.
@@ -75,7 +75,7 @@ An unavailable record is not a verified answer and must not invent one.
 
 ## Learner handoff
 
-Ask the learner to verify the saved report, then commit only RESULT.json.
+Ask the learner to verify the saved report, then commit only report.json.
 The checker validates structure, source scope, option conclusions for verified
 records, and unchanged project files. It does not contact Context7, open URLs,
 authenticate UI history, or fully evaluate the explanatory prose.
